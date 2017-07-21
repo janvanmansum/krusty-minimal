@@ -207,7 +207,7 @@ define([
       uri = uri.replace("http://", "");
       uri = uri.replace(".noterik.com", BaseConfig.baseURI+"/data");      
       //var screenshotTime = Math.floor(parseInt(referVid.find('rawvideo[id=1] > properties > duration').text()) / 2);
-      var screenshotTime =  Math.floor(parseInt(starttime) / 1000) + 10;
+      var screenshotTime =  Math.floor(parseInt(starttime) / 1000) + 1;
       var hours = Math.floor(screenshotTime / 3600);
       var minutes = Math.floor((screenshotTime % 3600) / 60);
       var seconds = Math.floor((screenshotTime % 3600) % 60);
